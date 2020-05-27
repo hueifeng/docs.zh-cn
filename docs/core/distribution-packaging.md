@@ -73,7 +73,7 @@ ms.locfileid: "81386638"
 
 - (4) **sdk/NuGetFallbackFolder** 包含 SDK 在还原操作期间使用的 NuGet 包的缓存，例如在运行 `dotnet restore` 或 `dotnet build` 时。 此文件夹仅在 .NET Core 3.0 之前使用。 不能从源生成它，因为它包含来自 `nuget.org` 的预构建二进制资产。
 
-shared **** 文件夹包含框架。共享框架在中心位置提供一组库，使得不同的应用程序可以使用它们。
+ **shared** 文件夹包含框架。共享框架在中心位置提供一组库，使得不同的应用程序可以使用它们。
 
 - (5) **shared/Microsoft.NETCore.App/\<runtime version>** 此框架包含.NET Core 运行时和支持托管库。
 
