@@ -1,6 +1,6 @@
 ---
-title: 内存<T>和跨度<T>使用准则
-description: 本文介绍内存<T> 和跨度<T>，它们是 .NET Core 中可在管道中使用的结构化数据的缓冲区。
+title: Memory<T>和Span<T>使用准则
+description: 本文介绍Memory<T> 和Span<T>，它们是 .NET Core 中可在管道中使用的结构化数据的缓冲区。
 ms.date: 10/01/2018
 helpviewer_keywords:
 - Memory&lt;T&gt; and Span&lt;T&gt; best practices
@@ -12,7 +12,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 06/23/2020
 ms.locfileid: "85245591"
 ---
-# <a name="memoryt-and-spant-usage-guidelines"></a>内存\<T>和跨度\<T>使用准则
+# <a name="memoryt-and-spant-usage-guidelines"></a>Memory\<T>和Span\<T>使用准则
 
 .NET Core 包括多个表示内存的任意连续区域的类型。 .NET Core 2.0 引入了 <xref:System.Span%601> 和 <xref:System.ReadOnlySpan%601>，它们是可由托管或非托管内存提供支持的轻量级内存缓冲区。 由于这些类型只能存储在堆栈上，因此它们不适用于多种方案，包括异步方法调用。 .NET Core 2.1 添加了其他一些类型，包括 <xref:System.Memory%601>、<xref:System.ReadOnlyMemory%601>、<xref:System.Buffers.IMemoryOwner%601> 和 <xref:System.Buffers.MemoryPool%601>。 与 <xref:System.Span%601> 相同，<xref:System.Memory%601> 及其相关类型可以由托管和非托管内存提供支持。 与 <xref:System.Span%601> 不同，<xref:System.Memory%601> 可以存储在托管堆上。
 
